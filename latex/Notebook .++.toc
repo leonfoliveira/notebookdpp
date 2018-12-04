@@ -1,0 +1,33 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Graphs and Trees}{2}
+\contentsline {subsection}{\numberline {1.1}Depth-First Search (DFS)}{2}
+\contentsline {subsection}{\numberline {1.2}Breadth-First Search (BFS)}{2}
+\contentsline {subsection}{\numberline {1.3}Dijkstra}{3}
+\contentsline {subsection}{\numberline {1.4}Bellman-Ford}{3}
+\contentsline {subsection}{\numberline {1.5}Kruskal}{4}
+\contentsline {subsection}{\numberline {1.6}Floyd-Warshall}{4}
+\contentsline {subsection}{\numberline {1.7}Segment Tree}{5}
+\contentsline {section}{\numberline {2}Dynamic Programming}{6}
+\contentsline {subsection}{\numberline {2.1}Merge-Sort}{6}
+\contentsline {subsection}{\numberline {2.2}Longest Increasing Subsequence (LIS)}{6}
+\contentsline {subsection}{\numberline {2.3}Longest Common Subsequence (LCS)}{7}
+\contentsline {subsection}{\numberline {2.4}Kadane}{7}
+\contentsline {subsection}{\numberline {2.5}Knapsack}{8}
+\contentsline {subsection}{\numberline {2.6}Coin Change}{8}
+\contentsline {section}{\numberline {3}Math and Geometry}{9}
+\contentsline {subsection}{\numberline {3.1}Greatest Common Divisor}{9}
+\contentsline {subsection}{\numberline {3.2}Least Common Multiple}{9}
+\contentsline {subsection}{\numberline {3.3}Extended Euclidean Algorithm}{9}
+\contentsline {subsection}{\numberline {3.4}N Choose R}{9}
+\contentsline {subsection}{\numberline {3.5}Modular Multiplication}{10}
+\contentsline {subsection}{\numberline {3.6}Modular Exponentiation}{10}
+\contentsline {subsection}{\numberline {3.7}Modular Inverse}{10}
+\contentsline {subsection}{\numberline {3.8}Matrix Multiplication}{10}
+\contentsline {subsection}{\numberline {3.9}Sieve Of Eratosthenes}{11}
+\contentsline {subsection}{\numberline {3.10}Factoring}{11}
+\contentsline {subsection}{\numberline {3.11}Divisors}{11}
+\contentsline {subsection}{\numberline {3.12}Amount of Divisors}{11}
+\contentsline {subsection}{\numberline {3.13}Polygon Area}{12}
+\contentsline {subsection}{\numberline {3.14}Convex Hull}{12}
+\contentsline {section}{\numberline {4}Miscellaneous}{14}
+\contentsline {subsection}{\numberline {4.1}ASCII Table}{14}
