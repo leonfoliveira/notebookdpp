@@ -3,8 +3,8 @@ INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/leonardo/Drive/Projetos/ICPC/Notebook/latex/Notebook .++.tex
-OUTPUT Notebook .++.log
+INPUT /home/leonardo/Drive/Projetos/ICPC/Notebook/latex/Notebook.++.tex
+OUTPUT /home/leonardo/Drive/Projetos/ICPC/Notebook/latex/Notebook.++.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
@@ -64,9 +64,9 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-INPUT Notebook .++.aux
-INPUT Notebook .++.aux
-OUTPUT Notebook .++.aux
+INPUT /home/leonardo/Drive/Projetos/ICPC/Notebook/latex/Notebook.++.aux
+INPUT /home/leonardo/Drive/Projetos/ICPC/Notebook/latex/Notebook.++.aux
+OUTPUT /home/leonardo/Drive/Projetos/ICPC/Notebook/latex/Notebook.++.aux
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
@@ -91,10 +91,10 @@ INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-INPUT logo.png
-INPUT ./logo.png
-OUTPUT Notebook .++.pdf
-INPUT ./logo.png
+INPUT /home/leonardo/Drive/Projetos/ICPC/Notebook/latex/logo.png
+INPUT /home/leonardo/Drive/Projetos/ICPC/Notebook/latex/logo.png
+OUTPUT /home/leonardo/Drive/Projetos/ICPC/Notebook/latex/Notebook.++.pdf
+INPUT /home/leonardo/Drive/Projetos/ICPC/Notebook/latex/logo.png
 INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
@@ -106,21 +106,22 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT Notebook .++.toc
-INPUT Notebook .++.toc
+INPUT /home/leonardo/Drive/Projetos/ICPC/Notebook/latex/Notebook.++.toc
+INPUT /home/leonardo/Drive/Projetos/ICPC/Notebook/latex/Notebook.++.toc
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
-OUTPUT Notebook .++.toc
+OUTPUT /home/leonardo/Drive/Projetos/ICPC/Notebook/latex/Notebook.++.toc
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT ascii.png
-INPUT ./ascii.png
-INPUT ./ascii.png
-INPUT Notebook .++.aux
+INPUT /home/leonardo/Drive/Projetos/ICPC/Notebook/latex/ascii.png
+INPUT /home/leonardo/Drive/Projetos/ICPC/Notebook/latex/ascii.png
+INPUT /home/leonardo/Drive/Projetos/ICPC/Notebook/latex/ascii.png
+INPUT /home/leonardo/Drive/Projetos/ICPC/Notebook/latex/Notebook.++.aux
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
