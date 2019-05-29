@@ -1,10 +1,13 @@
 # Notebook .++
 
-ACM ICPC Reference
+Code reference for ACM/ICPC contests
 
-Code reference for programming contest. <br>
+## Authors
 
+* **Eduardo Augusto de Oliveira** - [eduardo0401](https://github.com/eduardo0401)
+* **Dêner José Ribeiro** - [DenerRibeiro](https://github.com/DenerRibeiro)
+* **Leonardo Furtado de Oliveira** - [leonfoliveira](https://github.com/leonfoliveira)
 
-By: <br>
-- Team .++ <br>
-- Federal University of Itajubá, Brazil
+## License
+
+This project is licensed under the GNU General Public License - see the [LICENSE.md](LICENSE.md) file for details
