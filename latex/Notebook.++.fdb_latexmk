@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1558650347 "/home/leonardo/Drive/Projetos/ICPC/Notebook/latex/Notebook.++.tex" "/home/leonardo/Drive/Projetos/ICPC/Notebook/latex/Notebook.++.pdf" "Notebook.++" 1558650350
+["pdflatex"] 1559147969 "/home/leonardo/Drive/Projetos/ICPC/Notebook/latex/Notebook.++.tex" "/home/leonardo/Drive/Projetos/ICPC/Notebook/latex/Notebook.++.pdf" "Notebook.++" 1559147972
   "/etc/texmf/web2c/texmf.cnf" 1554320833 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/leonardo/Drive/Projetos/ICPC/Notebook/latex/Notebook.++.aux" 1558650350 3142 17843d7612ebadf2aad20934941ad0a3 ""
-  "/home/leonardo/Drive/Projetos/ICPC/Notebook/latex/Notebook.++.tex" 1558650345 20115 c7ef578955eb66c6f02f8c7668f1fe68 ""
+  "/home/leonardo/Drive/Projetos/ICPC/Notebook/latex/Notebook.++.aux" 1559147972 3226 97fab2498cec96e8cc79865f8beeccf8 ""
+  "/home/leonardo/Drive/Projetos/ICPC/Notebook/latex/Notebook.++.tex" 1559147969 21104 4a5a667aa54b4d93ad58bd3c5b5664bc ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1480098701 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1480098701 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -70,15 +70,15 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1520210507 32485 c64754543d8ac501bea6e75e209ea521 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1554320963 2700761 ac0584cc9514ab21918550a6948c4ee2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1554320996 4129889 52fc578a53b1a0b74d26b487bebe249c ""
-  "Notebook.++.aux" 1558650350 3142 17843d7612ebadf2aad20934941ad0a3 ""
-  "Notebook.++.tex" 1558650345 20115 c7ef578955eb66c6f02f8c7668f1fe68 ""
-  "Notebook.++.toc" 1558650350 2451 a08b40d5077893ab5f08f4f57dd3b66a ""
+  "Notebook.++.aux" 1559147972 3226 97fab2498cec96e8cc79865f8beeccf8 ""
+  "Notebook.++.tex" 1559147969 21104 4a5a667aa54b4d93ad58bd3c5b5664bc ""
+  "Notebook.++.toc" 1559147972 2517 d3a9cc7231c3835baefeead435bdae80 ""
   "ascii.png" 1539961878 78333 bd15e19b45d5a97d1b5c4036840a7a98 ""
   "logo.png" 1539876920 29972 97859f7943ea873d949bf97ce138c9ee ""
   (generated)
+  "/home/leonardo/Drive/Projetos/ICPC/Notebook/latex/Notebook.++.log"
   "Notebook.++.aux"
   "/home/leonardo/Drive/Projetos/ICPC/Notebook/latex/Notebook.++.pdf"
-  "Notebook.++.pdf"
-  "/home/leonardo/Drive/Projetos/ICPC/Notebook/latex/Notebook.++.log"
   "Notebook.++.log"
+  "Notebook.++.pdf"
   "Notebook.++.toc"

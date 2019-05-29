@@ -51,21 +51,21 @@ left=20mm
   \centering
   \includegraphics[width=0.15\textwidth]{logo.png}\par\vspace{1cm}
   {\scshape\LARGE Universidade Federal de Itajubá \par}
-  \vspace{1cm}
-  {\scshape\Large .++\par}
   \vspace{1.5cm}
   {\huge\bfseries ACM ICPC Reference\par}
   \vspace{2cm}
+  {\scshape\Large .++\par}  
+  \vspace{1cm}
   {\Large\itshape Dêner José Ribeiro\par}
   {\Large\itshape Eduardo Augusto de Oliveira\par}
   {\Large\itshape Leonardo Furtado de Oliveira\par}
   \vfill
-  Coach\par
-  Prof. Dr.~Edmilson Marmo Moreira
+  Coaches\par
+  ~Felipe Kallás Silva
   
   \vfill
   
-  {\large Maio / 2019\par}
+  {\large Junho / 2019\par}
 \end{titlepage}
 
 \thispagestyle{empty}
@@ -254,6 +254,50 @@ void floyd() {
 \end{lstlisting}
 * Don't use $INT_-$$MAX$
 
+\subsection{Ford-Fulkerson}
+Time: $O(EV^3)$
+\begin{lstlisting}
+int graph[MAXN][MAXN], parent[MAXN], n;
+
+bool bfs(int src, int snk) {
+    vb vis(n);
+    queue<int> q;
+    q.push(src);
+
+    parent[src] = -1;
+    vis[src] = true;
+    while (!q.empty()) {
+        int u = q.front();
+        q.pop();
+        vis[u] = true;
+        for (int v = 0; v < n; v++)
+            if (!vis[v] && graph[u][v]) {
+                q.push(v);
+                parent[v] = u;
+                vis[v] = true;
+            }
+    }
+    return vis[snk];
+}
+
+int ford(int src, int snk) {
+    int flow = 0;
+        
+    while (bfs(src, snk)) {
+        int path_flow = INT_MAX;
+        for (int v = snk; v != src; v = parent[v])
+            path_flow = min(path_flow, graph[parent[v]][v]);
+
+        for (int v = snk; v != src; v = parent[v]) {
+            graph[parent[v]][v] -= path_flow;
+            graph[v][parent[v]] += path_flow;
+        }
+        flow += path_flow;
+    }
+    return flow;
+}
+\end{lstlisting}
+\pagebreak
 \subsection{Tarjan}
 Time: $O(V + E)$
 \begin{lstlisting}
