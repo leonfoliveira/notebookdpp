@@ -2,69 +2,65 @@
 
 using namespace std;
 
-#define ii pair<int, int>
 #define vi vector<int>
-#define vii vector<ii>
-#define vb vector<bool>
-#define ll long long
-#define mk make_pair
 #define pb push_back
-#define MAXN 100
+#define MAXN 1000
 
-int graph[MAXN][MAXN], parent[MAXN], n;
+int n, flow[MAXN][MAXN], parent[MAXN];
+vector<int> graph[MAXN];
 
 bool bfs(int src, int snk) {
-    vb vis(n);
+    memset(parent, -1, sizeof parent);
     queue<int> q;
+
+    parent[src] = -2;
     q.push(src);
-    parent[src] = -1;
-    vis[src] = true;
     while (!q.empty()) {
         int u = q.front();
         q.pop();
-        vis[u] = true;
-        for (int v = 0; v < n; v++)
-            if (!vis[v] && graph[u][v]) {
-                q.push(v);
+        for (int v : graph[u]) {
+            if (parent[v] == -1 && flow[u][v]) {
                 parent[v] = u;
-                vis[v] = true;
+                if (v == snk) return true;
+                q.push(v);
             }
+        }
     }
-    return vis[snk];
+    return false;
 }
 
 int ford(int src, int snk) {
-    int flow = 0;
+    int max_flow = 0;
     while (bfs(src, snk)) {
         int path_flow = INT_MAX;
         for (int v = snk; v != src; v = parent[v])
-            path_flow = min(path_flow, graph[parent[v]][v]);
+            path_flow = min(path_flow, flow[parent[v]][v]);
 
         for (int v = snk; v != src; v = parent[v]) {
-            graph[parent[v]][v] -= path_flow;
-            graph[v][parent[v]] += path_flow;
+            flow[parent[v]][v] -= path_flow;
+            flow[v][parent[v]] += path_flow;
         }
-        flow += path_flow;
+        max_flow += path_flow;
     }
-    return flow;
+    return max_flow;
 }
 
 int main() {
 
-    n = 6;
-    for (int i = 0; i < n; i++)
-        for (int j = 0; j < n; j++)
-            graph[i][j] = 0;
-    graph[0][1] = 16;
-    graph[0][2] = 13;
-    graph[1][2] = 10;
-    graph[1][3] = 12;
-    graph[2][1] = 4;
-    graph[2][4] = 14;
-    graph[3][2] = 9;
-    graph[3][5] = 20;
-    graph[4][3] = 7;
-    graph[4][5] = 4;
+    int matrix[][6] = { {0, 16, 13, 0, 0, 0}, 
+                        {0, 0, 10, 12, 0, 0}, 
+                        {0, 4, 0, 0, 14, 0}, 
+                        {0, 0, 9, 0, 0, 20}, 
+                        {0, 0, 0, 7, 0, 4}, 
+                        {0, 0, 0, 0, 0, 0} 
+                      }; 
+    
+    for (int i = 0; i < 6; i++)
+        for (int j = 0; j < 6; j++) {
+            if (matrix[i][j])
+                graph[i].pb(j);
+            flow[i][j] = matrix[i][j];
+        }
 
     cout << ford(0, 5) << endl;
 }
