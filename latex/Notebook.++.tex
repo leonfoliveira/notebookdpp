@@ -530,16 +530,15 @@ int lcs() {
 \subsection{Kadane}
 Time: $O(n)$
 \begin{lstlisting}
-int v[MAXN];
-// Max interval sum
+int v[MAXN], n;
+
 int kadane() {
-    int max = INT_MIN, temp = 0;
-    for (int i : v) {
-        temp += i;
-        if (max < temp) max = temp;
-        if (temp < 0) temp = 0;
-    }
-    return max;
+	int ans = INT_MIN, temp = 0;
+	for (int i = 0; i < n; i++) {
+		temp = max(v[i], temp+v[i]);
+		ans = max(ans, temp);
+	}
+	return ans;
 }
 \end{lstlisting}
 \pagebreak

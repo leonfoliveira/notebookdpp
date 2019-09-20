@@ -13,16 +13,15 @@ using namespace std;
 
 // Kadane
 
-int v[MAXN];
+int v[MAXN], n;
 
 int kadane() {
-    int max = INT_MIN, temp = 0;
-    for (int i : v) {
-        temp += i;
-        if (max < temp) max = temp;
-        if (temp < 0) temp = 0;
-    }
-    return max;
+	int ans = v[0], temp = v[0];
+	for (int i = 1; i < n; i++) {
+		temp = max(v[i], temp+v[i]);
+		ans = max(ans, temp);
+	}
+	return ans;
 }
 
 int main() {}
